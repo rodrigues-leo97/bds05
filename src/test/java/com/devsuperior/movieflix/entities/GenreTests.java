@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class GenreTests {
 
 	@Test
-	public void genreShouldHaveCorrectStructure() {
+	public void genreShouldHaveCorrectStructure() { //Genre deve ter a estrutura de criação correta
 	
 		Genre entity = new Genre();
 		entity.setId(1L);
