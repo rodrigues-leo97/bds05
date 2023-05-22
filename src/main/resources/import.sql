@@ -12,8 +12,9 @@ INSERT INTO tb_genre(name) VALUES ('Heróis');
 INSERT INTO tb_genre(name) VALUES ('Ação');
 
 
-INSERT INTO tb_movie(title, sub_title, year, img_uri, synopsis, genre_id) VALUES ('Vingadores', 'Ultimato', 2019, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3JKq4Xne_J5_X-n0iHColGkmVpIYmyfBfmyUvocXD4ijZSftuLyMvhwzye38F6eYIRAY&usqp=CAU', 'Sinopse não revelada', 1);
-
+INSERT INTO tb_movie(title, sub_title, year, img_url, synopsis, genre_id) VALUES ('Vingadores', 'Ultimato', 2019, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3JKq4Xne_J5_X-n0iHColGkmVpIYmyfBfmyUvocXD4ijZSftuLyMvhwzye38F6eYIRAY&usqp=CAU', 'Sinopse não revelada', 1);
+INSERT INTO tb_movie(title, sub_title, year, img_url, synopsis, genre_id) VALUES ('Missão Impossível 7', 'Acerto de Contas', 2020, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3JKq4Xne_J5_X-n0iHColGkmVpIYmyfBfmyUvocXD4ijZSftuLyMvhwzye38F6eYIRAY&usqp=CAU', 'Sinopse não revelada', 2);
 
 INSERT INTO tb_review(text, user_id, movie_id) VALUES ('Texto de exemplo', 1, 1);
+INSERT INTO tb_review(text, user_id, movie_id) VALUES ('Tom Cruise é foda', 1, 2);
 
