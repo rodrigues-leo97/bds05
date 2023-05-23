@@ -34,6 +34,15 @@ public class UserService implements UserDetailsService {
         return new UserDTO(entity);
     }
 
+    @Transactional
+    public UserDTO findByLoggedUser() {
+        User user = authService.authenticated(); //valida se o usuário tem recursos pra acessar oq ele está querendo acessar ou se irá bloquear o acesso dele para determinado recurso
+        Optional<User> obj = repository.findById(user.getId());
+        User entity = obj.orElseThrow(() -> new EntityNotFoundException("Entity not found"));
+
+        return new UserDTO(user);
+    }
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException { //irá fazer a busca por EMAIL
 
